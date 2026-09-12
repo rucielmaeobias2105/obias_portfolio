@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="gold">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ruciel Mae Obias — Turning ideas into thoughtful, functional digital experiences">
+    <title>E-PORTFOLIO | Ruciel Mae Obias</title>
+    <link rel="icon" type="image/png" href="profile/tab_icon.png">
+
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('portfolio-theme');
+                if (!t) t = 'dark';
+                document.documentElement.setAttribute('data-theme', t);
+                document.documentElement.setAttribute('data-accent', 'gold');
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="stylesheet" href="src/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand brand-logo">
+                <img src="profile/tab_icon.png" alt="Logo" class="brand-img">
+            </a>
+
+            <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#experience">Work Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <h1 class="hero-headline">Hi I'am Ruciel Mae Obias<span class="accent-word">.</span></h1>
+
+                        <div class="hero-signature">Bachelor of Science in Computer Science</div>
+                        <div class="hero-role"></div>
+
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-outline"><i class="fa-solid fa-briefcase"></i> View My Work</a>
+                            <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-blob" aria-hidden="true"></div>
+                        <div class="hero-photo-wrapper">
+                            <div class="hero-photo-ring"></div>
+                            <div class="hero-photo-frame">
+                                <img src="profile/pic.jpg" alt="Portrait of Ruciel Mae Obias">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <span class="section-label">About</span>
+                        <p class="about-bio">I'm a 4th-year Bachelor of Science in Computer Science student passionate about technology and problem-solving. I enjoy facing new challenges and continuously improving my skills through every opportunity that comes my way. I believe in learning from my mistakes, welcoming feedback, and collaborating with others as I grow into a well-rounded future professional.</p>
+
+                        <div class="about-files">
+                            <button class="btn btn-primary js-file-open"
+                                    data-pdf="files/Ruciel.pdf"
+                                    data-title="Resume"
+                                    data-sub="Ruciel Mae Obias">
+                                <i class="fa-solid fa-file-lines"></i> View Resume
+                            </button>
+                            <button class="btn btn-primary js-file-open"
+                                    data-pdf="files/RUCIEL_PDS.pdf"
+                                    data-title="Personal Data Sheet"
+                                    data-sub="Ruciel Mae Obias">
+                                <i class="fa-solid fa-file-lines"></i> View PDS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-section">
+                    <div class="tools-header">
+                        <h3 class="tools-title">Tools I've <em>Used</em></h3>
+                    </div>
+
+                    <div class="tools-category">
+                        <div class="tools-cat-label">
+                            <span>Programming &amp; Scripting</span>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/c%2B%2B.png" alt="C++ logo">
+                                </div>
+                                <span class="tool-name">C++</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/csharp.jpg" alt="C# logo">
+                                </div>
+                                <span class="tool-name">C#</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/java.jpg" alt="Java logo">
+                                </div>
+                                <span class="tool-name">Java</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/PYTHON.webp" alt="Python logo">
+                                </div>
+                                <span class="tool-name">Python</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/JAVASCRIPT.webp" alt="JavaScript logo">
+                                </div>
+                                <span class="tool-name">JavaScript</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/CSS.jpg" alt="CSS3 logo">
+                                </div>
+                                <span class="tool-name">CSS3</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/HTML.png" alt="HTML5 logo">
+                                </div>
+                                <span class="tool-name">HTML5</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/LARAVEL.png" alt="Laravel logo">
+                                </div>
+                                <span class="tool-name">Laravel</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/VB.NET.png" alt="VB.NET logo">
+                                </div>
+                                <span class="tool-name">VB.NET</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/PHP.jpg" alt="PHP logo">
+                                </div>
+                                <span class="tool-name">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools-category">
+                        <div class="tools-cat-label">
+                            <span>Databases</span>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/ms_access.jpg" alt="MS Access logo">
+                                </div>
+                                <span class="tool-name">MS Access</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/MYSQL.avif" alt="MySQL logo">
+                                </div>
+                                <span class="tool-name">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools-category">
+                        <div class="tools-cat-label">
+                            <span>Development Tools</span>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/git.png" alt="Git logo">
+                                </div>
+                                <span class="tool-name">Git</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/gitbash.png" alt="Git Bash logo">
+                                </div>
+                                <span class="tool-name">Git Bash</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/github.jpg" alt="GitHub logo">
+                                </div>
+                                <span class="tool-name">GitHub</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/opencode.png" alt="OpenCode logo">
+                                </div>
+                                <span class="tool-name">OpenCode</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/xampp.svg" alt="XAMPP logo">
+                                </div>
+                                <span class="tool-name">XAMPP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools-category">
+                        <div class="tools-cat-label">
+                            <span>Design &amp; Multimedia</span>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/PHOTOSHOP.webp" alt="Photoshop logo">
+                                </div>
+                                <span class="tool-name">Photoshop</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/CANVA.webp" alt="Canva logo">
+                                </div>
+                                <span class="tool-name">Canva</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/CAPCUT.webp" alt="CapCut logo">
+                                </div>
+                                <span class="tool-name">CapCut</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="LOGO/FILMORA.webp" alt="Filmora logo">
+                                </div>
+                                <span class="tool-name">Filmora</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="edu-section" id="education">
+            <div class="container">
+                <span class="section-label">Education</span>
+                <p class="section-desc">My academic journey and the foundations that shaped me</p>
+
+                <div class="edu-list">
+                    <div class="edu-item">
+                        <h4>Data Center College of the Philippines Inc. - Bangued Abra</h4>
+                        <span class="edu-years">2023 – Present &middot; BS Computer Science</span>
+                        <p>4th Year - Currently Enrolled</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>An-anaao Integrated School</h4>
+                        <span class="edu-years">2017 – 2023 &middot; Senior High School – TVL-ICT CSS NCII</span>
+                        <p>With High Honors &bull; Batch Salutatorian </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cert-section" id="certificates">
+            <div class="container">
+                <span class="section-label">Certificates</span>
+                <p class="section-desc">Click any certificate to view the full image.</p>
+
+                <div class="cert-slider">
+                    <div class="cert-track" id="cert-track">
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/startup2.png"
+                                 data-title="Understanding Startups &amp; Getting Your Idea for the Phil. StartUp Challenge XI"
+                                 data-org="Department of Information and Communications Technology"
+                                 data-date="September 7, 2026"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Understanding Startups &amp; Getting Your Idea for the Phil. StartUp Challenge XI">
+                                <img src="cert_img/startup2.png" alt="Understanding Startups &amp; Getting Your Idea for the Phil. StartUp Challenge XI certificate thumbnail">
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/startup.png"
+                                 data-title="Startup Now Cordillera: Exploring Programs, Funding &amp; Opportunities for Aspiring Startups"
+                                 data-org="Department of Science and Technology"
+                                 data-date="September 2, 2026"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Startup Now Cordillera: Exploring Programs, Funding &amp; Opportunities for Aspiring Startups">
+                                <img src="cert_img/startup.png" alt="Startup Now Cordillera: Exploring Programs, Funding &amp; Opportunities for Aspiring Startups certificate thumbnail">
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/seedling.png"
+                                 data-title="Stay Alert, Stay Secure: Promoting Cyber Awareness &amp; Online Scam Prevention"
+                                 data-org="Commission on Higher Education"
+                                 data-date="July 23, 2026"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Stay Alert, Stay Secure: Promoting Cyber Awareness &amp; Online Scam Prevention">
+                                <img src="cert_img/seedling.png" alt="Stay Alert, Stay Secure: Promoting Cyber Awareness &amp; Online Scam Prevention certificate thumbnail">
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/online_safety.png"
+                                 data-title="Online Safety Through Digital Netiquette"
+                                 data-org="Department of Information and Communications Technology"
+                                 data-date="July 23, 2026"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Online Safety Through Digital Netiquette">
+                                <img src="cert_img/online_safety.png" alt="Online Safety Through Digital Netiquette certificate thumbnail">
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/data_analytics.png"
+                                 data-title="Data Analytics &amp; Visualization Essentials"
+                                 data-org="Department of Information and Communications Technology"
+                                 data-date="December 11, 2025"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Data Analytics &amp; Visualization Essentials">
+                                <img src="cert_img/data_analytics.png" alt="Data Analytics &amp; Visualization Essentials certificate thumbnail">
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/nc_2.png"
+                                 data-title="Computer System Servicing NCII"
+                                 data-org="Technical Education and Skills Development Authority"
+                                 data-date="September 6, 2025"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Computer System Servicing NCII">
+                                <img src="cert_img/nc_2.png" alt="Computer System Servicing NCII certificate thumbnail">
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <div class="cert-thumb js-cert-open"
+                                 data-img="cert_img/ict_carrerprep.png"
+                                 data-title="Empowering the Next Gen: ICT Career Preparation Essentials Webinar"
+                                 data-org="Department of Information and Communications Technology"
+                                 data-date="June 26, 2025"
+                                 role="button"
+                                 tabindex="0"
+                                 title="Open Empowering the Next Gen: ICT Career Preparation Essentials Webinar">
+                                <img src="cert_img/ict_carrerprep.png" alt="Empowering the Next Gen: ICT Career Preparation Essentials Webinar certificate thumbnail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-arrows">
+                        <button class="cert-arrow prev" id="cert-prev" aria-label="Previous certificates">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="cert-arrow next" id="cert-next" aria-label="Next certificates">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exp-section" id="experience">
+            <div class="container">
+                <span class="section-label">Work Experience</span>
+
+                <div class="exp-grid">
+                    <div class="exp-item">
+                        <h3 class="exp-role">Commission on Elections</h3>
+                        <span class="exp-company">Intern</span>
+                        <div class="exp-dates">July 23, 2026 – Present</div>
+                        <ul class="exp-desc">
+                            <li>Assists in the preparation, organization, and encoding of election-related documents and records.</li>
+                            <li>Supports staff in facilitating voter registration processes and maintaining accurate data records.</li>
+                            <li>Develops attention to detail, professionalism, and organizational skills through hands-on government office experience.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3 class="exp-role">Instructor / Trainer</h3>
+                        <span class="exp-company">OCTA Information Technology Services</span>
+                        <div class="exp-dates">December 2025 - Present</div>
+                        <ul class="exp-desc">
+                            <li>Conduct training sessions about basic information technology concepts, computer hardware, software, and troubleshooting.</li>
+                            <li>Assist students in understanding lessons through hands-on activities and practical exercises.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3 class="exp-role">SK Kagawad</h3>
+                        <span class="exp-company">Barangay Velasco</span>
+                        <div class="exp-dates">2023 - Present</div>
+                        <ul class="exp-desc">
+                            <li>Participates in planning and implementing youth programs, activities, and community projects.</li>
+                            <li>Assists in organizing events that promote youth involvement and community development.</li>
+                            <li>Develops leadership, teamwork, communication, and organizational skills through public service.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3 class="exp-role">Special Program for Employment of Students (SPES)</h3>
+                        <span class="exp-company">Municipal Civil Registry Office LGU - Tayum</span>
+                        <div class="exp-dates">May 2026</div>
+                        <ul class="exp-desc">
+                            <li>Assisted in daily office tasks, document preparation, and file organization.</li>
+                            <li>Helped manage records and ensure proper handling of office documents.</li>
+                            <li>Assisted clients and responded to basic inquiries when needed.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3 class="exp-role">Work Immersion</h3>
+                        <span class="exp-company">Municipal Civil Registry Office LGU - Tayum </span>
+                        <div class="exp-dates">March 2023</div>
+                        <ul class="exp-desc">
+                            <li>Assisted employees with daily office activities and assigned tasks.</li>
+                            <li>Helped in organizing files, preparing documents, and maintaining office records to digitalized documents.</li>
+                            <li>Observed proper workplace procedures and learned professional work practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-section" id="projects">
+            <div class="container">
+                <span class="section-label">Selected Work</span>
+
+                <div class="project-grid" id="project-grid">
+                    <div class="cert-slide project-card">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/BHSM/login.png","projects/BHSM/dashboard.png","projects/BHSM/rooms.png","projects/BHSM/tenants.png","projects/BHSM/t_print.png","projects/BHSM/v.png","projects/BHSM/df.png","projects/BHSM/vdcdf.png","projects/BHSM/fgfd.png"]'
+                             data-caption="Boarding House System Management"
+                             data-desc="Boarding House System Management with dashboard, tenant tracking, rooms, and reporting features."
+                             role="button"
+                             tabindex="0"
+                             title="View Boarding House System Management">
+                            <img src="projects/BHSM/login.png" alt="Boarding House System Management screenshot">
+                            <div class="cert-caption">View Gallery</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Boarding House System Management</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">VB.net</span>
+                                <span class="project-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/MCA_cafe/Screenshot 2026-09-09 223300.png","projects/MCA_cafe/Screenshot 2026-09-09 223316.png","projects/MCA_cafe/Screenshot 2026-09-09 223331.png","projects/MCA_cafe/Screenshot 2026-09-09 223347.png","projects/MCA_cafe/Screenshot 2026-09-09 223358.png","projects/MCA_cafe/Screenshot 2026-09-09 223410.png"]'
+                             data-caption="Online Ordering &amp; Reservation System for MCA Cafe"
+                             data-desc="Cafe management system with ordering, menu management, and transaction tracking."
+                             role="button"
+                             tabindex="0"
+                             title="View Online Ordering &amp; Reservation System for MCA Cafe">
+                            <img src="projects/MCA_cafe/Screenshot 2026-09-09 223300.png" alt="Online Ordering &amp; Reservation System for MCA Cafe screenshot">
+                            <div class="cert-caption">View Gallery</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Online Ordering &amp; Reservation System for MCA Cafe</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Laravel</span>
+                                <span class="project-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/portfolio/Screenshot 2026-09-09 223636.png","projects/portfolio/Screenshot 2026-09-09 223701.png"]'
+                             data-caption="Personal Portfolio Website"
+                             data-desc="Responsive portfolio website built with modern web technologies. Features dark/light mode, smooth animations, and mobile-first design approach."
+                             role="button"
+                             tabindex="0"
+                             title="View Personal Portfolio Website">
+                            <img src="projects/portfolio/Screenshot 2026-09-09 223636.png" alt="Personal Portfolio Website screenshot">
+                            <div class="cert-caption">View Gallery</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/java_final.jpg"]'
+                             data-caption="ITCS Enrollment System"
+                             data-desc="This Java program implements a comprehensive enrollment system for Information technology and Computer Science students. The system collects personal information and academic details, then displays the appropriate curriculum based on the selected course, year level, and semester. It calculates tuition fees, applies discounts based on academic performance, processes down payments, and generates a complete enrollment summary including the student's balance."
+                             role="button"
+                             tabindex="0"
+                             title="View ITCS Enrollment System">
+                            <img src="projects/java_final.jpg" alt="ITCS Enrollment System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">ITCS Enrollment System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/python.png"]'
+                             data-caption="Student Management System"
+                             data-desc="This Python program is a simple Student Management System that allows users to manage student records using a dictionary. It provides options to add, view, edit, delete, and search for students based on their ID or name. The program continuously runs in a loop until the user chooses to exit, making it an interactive way to organize and update student information efficiently."
+                             role="button"
+                             tabindex="0"
+                             title="View Student Management System">
+                            <img src="projects/python.png" alt="Student Management System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Student Management System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/csharp proj.png"]'
+                             data-caption="Student Management System"
+                             data-desc="This program is a Student Management System developed in Visual Studio. It is designed to help users efficiently manage student information such as names, courses, and year levels. The system allows for adding, viewing, editing, deleting, and searching student records, making it a useful tool for organizing student data in an academic environment."
+                             role="button"
+                             tabindex="0"
+                             title="View Student Management System">
+                            <img src="projects/csharp proj.png" alt="Student Management System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Student Management System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/c++ proj.png"]'
+                             data-caption="Student and Teacher Management System"
+                             data-desc="This C++ program is a Student and Teacher Management System designed to handle basic record management in an academic setting. It allows users to add, view, edit, delete, and search information for both students and teachers using simple arrays and a menu-driven interface."
+                             role="button"
+                             tabindex="0"
+                             title="View Student and Teacher Management System">
+                            <img src="projects/c++ proj.png" alt="Student and Teacher Management System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Student and Teacher Management System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/dbms proj.png"]'
+                             data-caption="Database Management System"
+                             data-desc="This MS Access program is a Database Management System designed to organize, store, and manage student and teacher information efficiently. It allows users to input, edit, delete, and search data using structured tables, queries, forms, and reports."
+                             role="button"
+                             tabindex="0"
+                             title="View Database Management System">
+                            <img src="projects/dbms proj.png" alt="Database Management System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Database Management System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">MS Access</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/area_finder.jpg"]'
+                             data-caption="Area Finder"
+                             data-desc="A simple desktop application for computing the area of rectangles and triangles. Users can input dimensions and instantly compute the area with a clean, interactive interface."
+                             role="button"
+                             tabindex="0"
+                             title="View Area Finder">
+                            <img src="projects/area_finder.jpg" alt="Area Finder screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Area Finder</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">VB.NET</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/basic_registration.jpg"]'
+                             data-caption="Basic Registration System"
+                             data-desc="A record management form that allows users to save, update, delete, and search entries, with all data displayed in a live-updating table for easy viewing."
+                             role="button"
+                             tabindex="0"
+                             title="View Basic Registration System">
+                            <img src="projects/basic_registration.jpg" alt="Basic Registration System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Basic Registration System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">VB.NET</span>
+                                <span class="project-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/grade_computation.jpg"]'
+                             data-caption="Prelim Grade Computation System"
+                             data-desc="An academic grade calculator that computes quiz, recitation, assignment, and attendance ratings to automatically generate a student's prelim grade."
+                             role="button"
+                             tabindex="0"
+                             title="View Prelim Grade Computation System">
+                            <img src="projects/grade_computation.jpg" alt="Prelim Grade Computation System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Prelim Grade Computation System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/java proj.jpg"]'
+                             data-caption="School Enrollment System"
+                             data-desc="A console-based enrollment program that collects personal and academic information, displays subjects per semester, and automatically computes tuition, discounts, and remaining balance based on down payment and average grade."
+                             role="button"
+                             tabindex="0"
+                             title="View School Enrollment System">
+                            <img src="projects/java proj.jpg" alt="School Enrollment System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">School Enrollment System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/permanent_rec.jpg"]'
+                             data-caption="Permanent Record Management System"
+                             data-desc="A comprehensive student information system for registering permanent records, capturing personal, academic, and family background details, with full search, update, and delete functionality tied to a live data table."
+                             role="button"
+                             tabindex="0"
+                             title="View Permanent Record Management System">
+                            <img src="projects/permanent_rec.jpg" alt="Permanent Record Management System screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Permanent Record Management System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">VB.NET</span>
+                                <span class="project-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-slide project-card is-hidden">
+                        <div class="cert-thumb js-gallery"
+                             data-gallery='["projects/zodiac sign.png"]'
+                             data-caption="Zodiac Sign Finder"
+                             data-desc="A lightweight console program that determines a user's zodiac sign based on their input birth month and day."
+                             role="button"
+                             tabindex="0"
+                             title="View Zodiac Sign Finder">
+                            <img src="projects/zodiac sign.png" alt="Zodiac Sign Finder screenshot">
+                            <div class="cert-caption">View Project</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Zodiac Sign Finder</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-toggle">
+                    <button class="btn btn-outline" id="projects-toggle" type="button">
+                        <i class="fa-solid fa-chevron-down"></i> <span>See more projects</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <span class="section-label">Contact</span>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-line">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-7-11a7 7 0 1 1 14 0c0 6.65-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            Velasco, Tayum, Abra
+                        </div>
+                        <div class="contact-line">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                            rucielmaeobias277@gmail.com
+                        </div>
+                        <div class="contact-line">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.67.41.36.78 1.06.78 2.14v3.18c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                            <a href="https://github.com/rucielmaeobias2105" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="contact-line">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            <a href="https://www.facebook.com/chiel.obias.7" target="_blank" rel="noopener">Ruciel Mae Obias</a>
+                        </div>
+                        <div class="contact-line">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            <a href="https://t.me/09318467600" target="_blank" rel="noopener">09318467600</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-card" action="#" method="post" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="cf-name">Name</label>
+                            <input class="form-input" type="text" id="cf-name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-email">Email</label>
+                            <input class="form-input" type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="cf-message">Message</label>
+                            <textarea class="form-textarea" id="cf-message" name="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contact-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <div class="contact-col">
+                        <span class="contact-icon-wrap"><i class="fa-solid fa-location-dot contact-icon"></i></span>
+                        <span class="contact-item-label">Location</span>
+                        <span class="contact-item-value">Velasco, Tayum, Abra</span>
+                    </div>
+                    <div class="contact-col">
+                        <span class="contact-icon-wrap"><i class="fa-solid fa-envelope contact-icon"></i></span>
+                        <span class="contact-item-label">Email</span>
+                        <a class="contact-item-value" href="mailto:rucielmaeobias277@gmail.com">rucielmaeobias277@gmail.com</a>
+                    </div>
+                    <div class="contact-col">
+                        <span class="contact-icon-wrap"><i class="fa-solid fa-phone contact-icon"></i></span>
+                        <span class="contact-item-label">Phone</span>
+                        <a class="contact-item-value" href="tel:09318467600">09318467600</a>
+                    </div>
+                </div>
+
+                <div class="footer-badge">
+                    <img src="profile/pic.jpg" alt="Ruciel Mae Obias portrait">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Ruciel Mae Obias. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project gallery">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lb-close" aria-label="Close gallery">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <button class="lightbox-nav prev" id="lb-prev" aria-label="Previous image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="lightbox-nav next" id="lb-next" aria-label="Next image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="lightbox-title" id="lightbox-title"></div>
+            <figure class="lightbox-img">
+                <img id="lightbox-img" src="" alt="Project screenshot">
+            </figure>
+            <div class="lightbox-desc" id="lightbox-desc"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+        <div class="modal-content">
+            <button class="modal-close" id="cert-modal-close" aria-label="Close certificate">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-head">
+                <div>
+                    <h3 id="cert-modal-title"></h3>
+                    <div class="cert-sub" id="cert-modal-sub"></div>
+                </div>
+            </div>
+            <div class="modal-frame cert-image-frame">
+                <button class="cert-nav prev" id="cert-modal-prev" aria-label="Previous certificate">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="cert-nav next" id="cert-modal-next" aria-label="Next certificate">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+                <img id="cert-modal-img" src="" alt="Certificate">
+                <div class="cert-zoom-bar" id="cert-zoom-bar">
+                    <button type="button" id="cert-zoom-out" aria-label="Zoom out">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>
+                    </button>
+                    <button type="button" id="cert-zoom-reset" aria-label="Reset zoom">1x</button>
+                    <button type="button" id="cert-zoom-in" aria-label="Zoom in">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="file-modal" role="dialog" aria-modal="true" aria-label="Document viewer">
+        <div class="modal-content">
+            <button class="modal-close" id="file-modal-close" aria-label="Close document">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-head">
+                <div>
+                    <h3 id="file-modal-title"></h3>
+                    <div class="cert-sub" id="file-modal-sub"></div>
+                </div>
+            </div>
+            <div class="modal-frame">
+                <iframe id="file-modal-frame" title="Document PDF"></iframe>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-primary btn" id="file-modal-download"><i class="fa-solid fa-download"></i> Download</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

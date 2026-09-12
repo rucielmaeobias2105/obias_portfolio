@@ -1,0 +1,7 @@
+# Local XAMPP/Apache only: the site's static assets (images, PDFs, logos)
+# live in Vite's public/ directory. When opened directly from the repo
+# root (http://localhost/port/), map the asset folders to public/.
+# This file is ignored by Vercel/netlify static deploys.
+RewriteEngine On
+RewriteRule ^(profile|cert_img|projects|files|LOGO)/(.*)$ public/$1/$2 [L]
+RewriteRule ^robots\.txt$ public/robots.txt [L]

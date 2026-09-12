@@ -4,4 +4,4 @@ Before planning or editing, find the row whose globs match the file's path and r
 
 | Applies to | Rule file |
 | --- | --- |
-| routes/web.php | .ai/rules/routes.md |
+| index.html | .ai/rules/index-html.md |

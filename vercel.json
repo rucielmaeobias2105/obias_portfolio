@@ -1,6 +1,8 @@
 {
-  "buildCommand": "composer install --no-dev --optimize-autoloader && npm run build && php artisan key:generate && php artisan view:clear && php artisan route:clear && php artisan config:clear",
-  "installCommand": "curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && composer install --no-dev && npm install",
-  "outputDirectory": "public",
-  "framework": null
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": "vite",
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "outputDirectory": "dist",
+    "cleanUrls": true
 }
