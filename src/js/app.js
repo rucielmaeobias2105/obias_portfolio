@@ -6,7 +6,7 @@
   var THEME_KEY = 'portfolio-theme';
 
   function storedTheme() {
-    try { return localStorage.getItem(THEME_KEY) || 'dark'; } catch (e) { return 'dark'; }
+    try { return localStorage.getItem(THEME_KEY) || 'light'; } catch (e) { return 'light'; }
   }
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" data-accent="gold">
+<html lang="en" data-theme="light" data-accent="gold">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
         (function () {
             try {
                 var t = localStorage.getItem('portfolio-theme');
-                if (!t) t = 'dark';
+                if (!t) t = 'light';
                 document.documentElement.setAttribute('data-theme', t);
                 document.documentElement.setAttribute('data-accent', 'gold');
             } catch (e) {}
